@@ -1,0 +1,4 @@
+topic: /tiltone/velocity
+setpoint_scale: {x: 0.5, y: 0.5, w: 0.5}
+gear_scale: [{x: 0.25, y: 0.25, w: 0.25}, {x: 0.5, y: 0.5, w: 0.5}, {x: 0.75, y: 0.75, w: 0.75}, {x: 1, y: 1, w: 1}]
+
