@@ -5,7 +5,7 @@ project(tiltone)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 # find_package(catkin REQUIRED COMPONENTS image_transport uvc_camera)
-find_package(catkin REQUIRED COMPONENTS rospy)
+find_package(catkin REQUIRED COMPONENTS roscpp rospy std_msgs geometry_msgs message_generation)
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
@@ -48,8 +48,8 @@ generate_messages(
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
   INCLUDE_DIRS
-  LIBRARIES tiltone
-  CATKIN_DEPENDS
+  LIBRARIES r2p
+  CATKIN_DEPENDS message_runtime
   DEPENDS system_lib
 )
 
